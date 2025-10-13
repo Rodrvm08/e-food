@@ -4,6 +4,7 @@ import Tag from "../tag";
 import { Link } from "react-router-dom";
 
 type Props = {
+    id: number,
     title: string;
     image: string;
     description: string;
@@ -11,7 +12,7 @@ type Props = {
     infos: string[]
 }
 
-const Restaurant = ({description, image, title, classification, infos }: Props) => (
+const Restaurant = ({description, image, title, classification, infos, id }: Props) => (
     <ContainerRest>
         <img src={image} alt={title}/>
         <Infos>
@@ -23,7 +24,7 @@ const Restaurant = ({description, image, title, classification, infos }: Props) 
             <span>{classification}<img src={estrela}/></span>
         </div>
         <Description>{description}</Description>
-        <Link to='/perfil'>
+        <Link to={`/perfil/${id}`}>
             <Tag children={'Saiba mais'} size='small'></Tag>
         </Link>
     </ContainerRest>
