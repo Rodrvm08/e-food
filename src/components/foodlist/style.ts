@@ -49,6 +49,7 @@ export const BotaoFechar = styled.img`
     top: 0;
     position: absolute;
     padding: 8px;
+    cursor: pointer;
 `
 
 export const ImageModal = styled.img`
@@ -85,4 +86,5 @@ export const ModalButton = styled.button`
     font-weight: bold;
     border: none;
     padding: 4px 8px;
+    cursor: pointer;
 `

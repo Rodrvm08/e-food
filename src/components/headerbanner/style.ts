@@ -13,6 +13,7 @@ export const Text = styled.h3`
     font-size: 18px;
     font-weight: 900;
     color: ${cores.laranja};
+    cursor: pointer;
 `
 
 export const Banner = styled.div`
