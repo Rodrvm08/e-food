@@ -2,6 +2,14 @@ import styled from "styled-components";
 import { cores } from "../../globalStyle";
 import close from '../../assets/close.svg'
 
+export const CartGlobalContainer = styled.div`
+    display: none;
+
+    &.isOpen {
+        display: block;
+    }
+`
+
 export const Overlay = styled.div`
     position: absolute;
     top: 0;

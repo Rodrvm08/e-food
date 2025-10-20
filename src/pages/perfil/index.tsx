@@ -1,6 +1,7 @@
 import FoodList from "../../components/foodlist";
 import Footer from "../../components/footer";
 import HeaderBanner from "../../components/headerbanner";
+import Cart from "../../components/carrinho";
 
 import { useEffect, useState } from "react";
 import type { CardapioItem, Restaurants } from "../home";
@@ -59,6 +60,7 @@ const Perfil = () => {
             />
         )}
             <FoodList foods={restaurante?.cardapio ?? []} />
+            <Cart />
             <Footer />
         </>
     )
